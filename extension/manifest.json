@@ -1,33 +1,30 @@
 {
-    "manifest_version": 2,
-    "name": "Instanon · Browse Instagram with no account",
-    "short_name": "Instanon",
-    "version": "1",
-    "description": "Instanon is a simple addon that lets you browse Instagram without an account.",
-    "author": "Tahoe Beetschen",
+  "manifest_version": 2,
+  "name": "Instanon · Browse Instagram with no account",
+  "short_name": "Instanon",
+  "version": "1.1",
+  "description": "Instanon is a simple addon that lets you browse Instagram without an account.",
+  "author": "Tahoe Beetschen",
 
-
-    "content_scripts": [
-      {
-        "matches": [
-          "https://www.instagram.com/*/"
-        ],
-        "js": ["content.js"],
-        "css": ["style.css"]
-      }
-    ],
-
-    "icons": {
-      "512": "icon.png"
-    },
-
-    "permissions": [
-      "storage"
-    ],
-      
-    "browser_action": {
-      "default_icon": "icon.png",
-      "default_popup": "popup.html",
-      "title": "Instanon"
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*/"],
+      "js": ["content.js"],
+      "css": ["style.css"]
     }
+  ],
+
+  "icons": {
+   "512": "icon.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "title": "Instanon"
   }
+}

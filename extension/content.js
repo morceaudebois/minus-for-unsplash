@@ -1,3 +1,10 @@
+// Si premier lancement, active isOn
+chrome.storage.local.get(['isOn'], function(result) {
+    if (result.isOn === undefined) {
+        chrome.storage.local.set({isOn: true});
+    }
+});
+
 // implémente la navigation dans les images
 document.body.addEventListener('click', function(event) {
     // si dans la grid
