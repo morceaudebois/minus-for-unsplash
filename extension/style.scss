@@ -1,0 +1,51 @@
+body.instanon {
+    overflow: auto!important;
+
+    div[role='presentation'].RnEpo, .tHaIX {
+        display: none;
+        height: 0px!important;
+        width: 0px!important;
+    }
+    
+    ._9AhH0, .Ln-UN, .qn-0x {
+        pointer-events: none;
+    }
+}
+
+#popup {
+    body {
+        background-color: rgba(250, 250, 250, 1.000);
+        min-width: 160px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: .7em;
+    }
+
+    #onOff {
+        cursor: pointer;
+        transition: all .07s ease-in;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+
+        &.disabled {
+            filter: grayscale(1);
+        }
+    }
+
+    #signature {
+        margin-top: 3em;
+        font-size: .8em;
+        line-height: 1.5em;
+        color: grey;
+
+        a {
+            color: grey;
+        }
+    }
+}
