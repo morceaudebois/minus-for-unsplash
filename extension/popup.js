@@ -3,7 +3,6 @@ let onOff = document.getElementById('onOff');
 // Si premier lancement, active isOn
 chrome.storage.local.get(['isOn'], function(result) {
     if (result.isOn === undefined) {
-        alert('premier lancement');
         chrome.storage.local.set({isOn: true});
     }
 });
