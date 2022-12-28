@@ -1,26 +1,23 @@
 // Si premier lancement, active isOn
-chrome.storage.local.get(['isOn'], function(result) {
+chrome.storage.local.get(['isOn'], function (result) {
     if (result.isOn === undefined) {
-        chrome.storage.local.set({isOn: true});
+        chrome.storage.local.set({ isOn: true });
     }
 });
 
-// ajout .instanon au body si activé
-chrome.storage.local.get(['isOn'], function(result) {
-    if (result.isOn) {
-        document.body.classList.add('instanon');
-    } else {
-        document.body.classList.remove('instanon');
-    }
+function setState(state) {
+    if (state) document.body.classList.add('unminus')
+    else document.body.classList.remove('unminus')
+}
+
+// ajout .unminus au body si activé
+chrome.storage.local.get(['isOn'], function (result) {
+    setState(result.isOn)
 });
 
-// ajout .instanon au body à chaque changement de .isOn
-chrome.storage.onChanged.addListener(function(changes, namespace) {
+// ajout .unminus au body à chaque changement de .isOn
+chrome.storage.onChanged.addListener(function (changes) {
     for (var key in changes) {
-        if (changes.isOn.newValue) {
-            document.body.classList.add('instanon');
-        } else {
-            document.body.classList.remove('instanon');
-        }
+        setState(changes.isOn.newValue)
     }
 });

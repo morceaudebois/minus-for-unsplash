@@ -1,0 +1,23 @@
+{
+  "name": "unsplash-minus",
+  "version": "1.0.0",
+  "description": "Unsplash Minus is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch --no-source-map --style compressed extension/style.scss extension/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morceaudebois/unsplash-minus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morceaudebois/unsplash-minus/issues"
+  },
+  "homepage": "https://github.com/morceaudebois/unsplash-minus#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
