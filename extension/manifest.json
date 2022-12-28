@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Instanon · Browse Instagram with no account",
-  "short_name": "Instanon",
-  "version": "1.1",
-  "description": "Instanon is a simple addon that lets you browse Instagram without an account.",
+  "name": "Unsplash Minus · Hide Unsplash+",
+  "short_name": "Unsplash Minus",
+  "version": "1.0",
+  "description": "Unsplash Minus is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
   "author": "Tahoe Beetschen",
 
   "content_scripts": [
     {
-      "matches": ["https://www.instagram.com/*/"],
+      "matches": ["https://unsplash.com/*"],
       "js": ["content.js"],
       "css": ["style.css"]
     }
@@ -22,9 +22,9 @@
     "storage"
   ],
 
-  "browser_action": {
+  "action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html",
-    "title": "Instanon"
+    "title": "Unsplash Minus"
   }
 }
