@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tahoooe/unsplash-minus/master/ressources/banner.jpg" width="100%"></img>
+  <img src="https://raw.githubusercontent.com/morceaudebois/unsplash-minus/master/ressources/banner.png" width="100%"></img>
 </p>
 
 Unsplash Minus is a small browser extension that allows you to hide all [Unsplash+](https://unsplash.com/plus) content from the Unsplash website. It gets rid of all the Unsplash+ photos in your grid as well as the Unsplash+ link in the header. You can see it in action [here]().
