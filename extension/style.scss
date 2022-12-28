@@ -1,12 +1,13 @@
 #popup {
     body {
-        background-color: rgba(250, 250, 250, 1.000);
+        background-color: #111111;;
         min-width: 160px;
         border-radius: 10px;
         box-sizing: border-box;
         padding: .7em;
+        font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
     }
-
+    
     #onOff {
         cursor: pointer;
         transition: all .07s ease-in;
@@ -22,16 +23,22 @@
         &.disabled {
             filter: grayscale(1);
         }
+
+        img {
+            width: 100%;
+            display: block;
+        }
     }
 
     #signature {
         margin-top: 3em;
         font-size: .8em;
         line-height: 1.5em;
-        color: grey;
+        text-align: justify;
+        color: #D1D1D1;
 
         a {
-            color: grey;
+            color: #D1D1D1;
         }
     }
 }
