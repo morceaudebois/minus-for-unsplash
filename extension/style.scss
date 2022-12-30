@@ -1,19 +1,25 @@
 #popup {
     body {
-        background-color: #111111;;
+        background-color: #fff;
         min-width: 160px;
         border-radius: 10px;
         box-sizing: border-box;
         padding: .7em;
         font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
     }
+
+    @media (prefers-color-scheme: dark) {
+        background: #111111;
+    }
+
+
     
     #onOff {
         cursor: pointer;
         transition: all .07s ease-in;
 
         &:hover {
-            transform: scale(1.07);
+            transform: scale(1.03);
         }
 
         &:active {
@@ -35,10 +41,19 @@
         font-size: .8em;
         line-height: 1.5em;
         text-align: justify;
-        color: #D1D1D1;
+        color: #111;
 
         a {
-            color: #D1D1D1;
+            color: #111;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: #111111;
+            color: #D1D1D1; 
+
+            a {
+                color: #D1D1D1;
+            }
         }
     }
 }
