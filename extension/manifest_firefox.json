@@ -1,0 +1,41 @@
+{
+    "author": "Tahoe Beetschen",
+    "browser_action": {
+        "browser_style": false,
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png"
+        },
+        "default_title": "Unsplash Minus",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://unsplash.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+    "default_locale": "en",
+    "description": "__MSG_extShortDesc__",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "64": "icon.png",
+        "96": "icon.png"
+    },
+    "manifest_version": 2,
+    "name": "Unsplash Minus",
+    "permissions": [
+        "storage"
+    ],
+    "short_name": "Unsplash Minus",
+    "version": "1.0"
+}

@@ -1,0 +1,10 @@
+{
+    "extensionName": {
+        "message": "Unsplash Minus",
+        "description": "extension name"
+    },
+    "extensionDesc": {
+        "message": "Unsplash Minus is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
+        "description": "extension description"
+    }
+}

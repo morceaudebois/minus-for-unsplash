@@ -1,7 +1,7 @@
 #popup {
     body {
         background-color: #fff;
-        min-width: 160px;
+        width: 190px;
         border-radius: 10px;
         box-sizing: border-box;
         padding: .7em;
@@ -13,8 +13,6 @@
             background: #111111;
         }
     }
-
-
     
     #onOff {
         cursor: pointer;
@@ -42,7 +40,6 @@
         margin-top: 3em;
         font-size: .8em;
         line-height: 1.5em;
-        text-align: justify;
         color: #111;
 
         a {
@@ -61,7 +58,12 @@
 }
 
 body.unminus {
-    figure[itemprop="image"]:has(.fMu6u), .HZLwe a[href="/plus"] {
+    .vZKGD, .unsplashPlus {
+        display: none;
+    }
+
+    // separated value because otherwise it breaks Firefox
+    figure[itemprop="image"]:has(.fMu6u) {
         display: none;
     }
 }
