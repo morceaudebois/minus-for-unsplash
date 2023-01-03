@@ -6,7 +6,7 @@ Unsplash Minus is a small browser extension that allows you to hide all [Unsplas
 
 https://user-images.githubusercontent.com/50768582/209845064-b20dcc8a-91af-4fd5-ae93-24cb15e7d1d7.mp4
 
-Unsplash Minus is available for [Chrome](https://chrome.google.com/webstore/detail/unsplash-minus-%C2%B7%C2%A0hide-uns/ancgmphhglnbebohehppcfjfdpakkcca) and will soon be available for Firefox.
+Unsplash Minus is available for [Chrome](https://chrome.google.com/webstore/detail/unsplash-minus-%C2%B7%C2%A0hide-uns/ancgmphhglnbebohehppcfjfdpakkcca) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/unsplash-minus/).
 
 <!-- Current state
 
