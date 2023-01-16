@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/morceaudebois/unsplash-minus/master/ressources/banner.png" width="100%"></img>
+  <img src="https://raw.githubusercontent.com/morceaudebois/minus-for-unsplash/master/ressources/banner.png" width="100%"></img>
 </p>
 
-Unsplash Minus is a small browser extension that allows you to hide all [Unsplash+](https://unsplash.com/plus) content from the Unsplash website. It gets rid of all the Unsplash+ photos in your grid as well as the Unsplash+ link in the header. You can see it in action [here]().
+Minus for Unsplash (formerly Unsplash Minus) is a small browser extension that allows you to hide all [Unsplash+](https://unsplash.com/plus) content from the Unsplash website. It gets rid of all the Unsplash+ photos in your grid as well as the Unsplash+ link in the header. You can see it in action here:
 
 https://user-images.githubusercontent.com/50768582/209845064-b20dcc8a-91af-4fd5-ae93-24cb15e7d1d7.mp4
 
-Unsplash Minus is available for [Chrome](https://chrome.google.com/webstore/detail/unsplash-minus-%C2%B7%C2%A0hide-uns/ancgmphhglnbebohehppcfjfdpakkcca) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/unsplash-minus/).
+Minus for Unsplash is available for [Chrome](https://chrome.google.com/webstore/detail/minus-for-unsplash-%C2%B7%C2%A0hide-uns/ancgmphhglnbebohehppcfjfdpakkcca) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/minus-for-unsplash/).
 
 <!-- Current state
 

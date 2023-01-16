@@ -6,7 +6,7 @@
             "16": "icon.png",
             "32": "icon.png"
         },
-        "default_title": "Unsplash Minus",
+        "default_title": "Minus for Unsplash",
         "default_popup": "popup.html"
     },
     "content_scripts": [
@@ -23,7 +23,7 @@
         }
     ],
     "default_locale": "en",
-    "description": "__MSG_extShortDesc__",
+    "description": "Minus for Unsplash is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
     "icons": {
         "16": "icon.png",
         "32": "icon.png",
@@ -32,10 +32,10 @@
         "96": "icon.png"
     },
     "manifest_version": 2,
-    "name": "Unsplash Minus",
+    "name": "Minus for Unsplash · Remove Unsplash+",
     "permissions": [
         "storage"
     ],
-    "short_name": "Unsplash Minus",
-    "version": "1.1.2"
+    "short_name": "Minus for Unsplash",
+    "version": "1.2"
 }
