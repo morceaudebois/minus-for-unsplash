@@ -1,10 +1,10 @@
 {
     "extensionName": {
-        "message": "Minus for Unsplash",
+        "message": "Minus pour Unsplash",
         "description": "extension name"
     },
     "extensionDesc": {
-        "message": "Minus for Unsplash is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
+        "message": "Minus pour Unsplash est une petite extension permettant de cacher les éléments Unsplash+ du site Unsplash.",
         "description": "extension description"
     }
 }
