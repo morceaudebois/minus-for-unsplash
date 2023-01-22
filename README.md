@@ -2,22 +2,12 @@
   <img src="https://raw.githubusercontent.com/morceaudebois/minus-for-unsplash/master/ressources/banner.png" width="100%"></img>
 </p>
 
-Minus for Unsplash (formerly Unsplash Minus) is a small browser extension that allows you to hide all [Unsplash+](https://unsplash.com/plus) content from the Unsplash website. It gets rid of all the Unsplash+ photos in your grid as well as the Unsplash+ link in the header. You can see it in action here:
+<p align="center">
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/minus-for-unsplash/"><img src="https://raw.githubusercontent.com/morceaudebois/minus-for-unsplash/master/ressources/firefox.svg" width="180" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://chrome.google.com/webstore/detail/minus-for-unsplash-%C2%B7-remo/ancgmphhglnbebohehppcfjfdpakkcca"><img src="https://raw.githubusercontent.com/morceaudebois/minus-for-unsplash/master/ressources/chrome.svg" width="180"/></a>
+</p>
+
+Unsplash used to be great! But since they introduced their new Unsplash+ service, browsing it has become a bit of a pain as it's now crowded with watermarked images blocked behind a pay wall. This extension aims to improve your Unsplash experience and get you more productive by getting rid of all that bloat. By turning Minus for Unsplash on, you will no longer see watermarked Unsplash+ images in your feed and will be able to focus on those that matter.
 
 https://user-images.githubusercontent.com/50768582/209845064-b20dcc8a-91af-4fd5-ae93-24cb15e7d1d7.mp4
-
-Minus for Unsplash is available for [Chrome](https://chrome.google.com/webstore/detail/minus-for-unsplash-%C2%B7%C2%A0hide-uns/ancgmphhglnbebohehppcfjfdpakkcca) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/minus-for-unsplash/).
-
-<!-- Current state
-
-❗️ As of may 2021, the functionality of Instanon has been severely limited. Since the plugin's conception, Instagram has implemented some server-side changes to their website which make it impossible to browse while being logged out. The plugin technically still works, but after a few photo requests, Instagram will redirect you to its login page. Also, Facebook took it down from the Chrome Web Store. ❗️ 
-
-<br />
-
-
-
-
-
-
-
-
