@@ -1,5 +1,3 @@
-❗️ **Notice (13/03/23)**: the extension has been deleted from the Chrome Web Store for no reason. I've been trying to get in contact with them for weeks but they never reply to my messages. I'm doing what I can but I can't promise it will be back any time soon 😔
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/morceaudebois/minus-for-unsplash/master/ressources/banner.png" width="100%"></img>
 </p>
