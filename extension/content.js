@@ -12,7 +12,8 @@ function setState(state) {
 }
 
 function yeet() {
-    document.querySelectorAll('.fMu6u').forEach(function (image) {
+    // Detected if a link to plus exists.
+    document.querySelectorAll('a[href*="/plus?"]').forEach(function (image) {
         image.closest('figure[itemprop="image"]').classList.add('unsplashPlus')
     })
 }
