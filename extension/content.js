@@ -30,4 +30,5 @@ chrome.storage.onChanged.addListener(function (changes) {
 
 // adds .unsplashPlus when using Firefox since it can't handle :has() 🙄
 if ((navigator.userAgent.indexOf("Firefox") != -1))
-    setInterval(yeet, 300)
+    setInterval(yeet, 200)
+

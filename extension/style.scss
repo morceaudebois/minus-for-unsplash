@@ -63,7 +63,7 @@ body.unminus {
     }
 
     // separated value because otherwise it breaks Firefox
-    figure[itemprop="image"]:has(.fMu6u) {
+    figure[itemprop="image"]:has(a[href^="/plus"]) { // 
         display: none;
     }
 }
