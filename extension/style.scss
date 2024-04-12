@@ -66,4 +66,13 @@ body.unminus {
     figure[itemprop="image"]:has(a[href^="/plus"]) { // 
         display: none;
     }
+
+    // nav item 
+    .BpoxV:has(a[href='/plus']) {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
 }

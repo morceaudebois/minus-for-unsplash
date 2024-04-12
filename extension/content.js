@@ -32,3 +32,36 @@ chrome.storage.onChanged.addListener(function (changes) {
 if ((navigator.userAgent.indexOf("Firefox") != -1))
     setInterval(yeet, 200)
 
+
+function debounce(func, delay) {
+    let timeoutId
+    
+    return function () {
+        const context = this
+        const args = arguments
+        clearTimeout(timeoutId)
+
+        timeoutId = setTimeout(() => {
+            func.apply(context, args)
+        }, delay)
+    }
+}
+
+function handleElementsInView(selector, callback) {
+    document.querySelectorAll(selector).forEach(element => {
+        callback(element)
+    })
+}
+
+function removeCollections() {
+    handleElementsInView('div[data-test="collection-feed-card"]', element => {
+        if (element.querySelector('.WZO3o').innerHTML.includes('Unsplash+')) {
+            element.classList.add('hidden')
+        }
+    })
+}
+
+// looks for collections on scroll & load
+window.addEventListener('scroll', debounce(removeCollections, 50))
+
+setTimeout(removeCollections, 200)
