@@ -1,78 +1,80 @@
 #popup {
-    body {
-        background-color: #fff;
-        width: 190px;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: .7em;
-        font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
-    }
+	body {
+		background-color: #fff;
+		width: 190px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		padding: 0.7em;
+		font-family: -apple-system, BlinkMacSystemFont, San Francisco,
+			Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial,
+			sans-serif;
+	}
 
-    @media (prefers-color-scheme: dark) {
-        body {
-            background: #111111;
-        }
-    }
-    
-    #onOff {
-        cursor: pointer;
-        transition: all .07s ease-in;
+	@media (prefers-color-scheme: dark) {
+		body {
+			background: #111111;
+		}
+	}
 
-        &:hover {
-            transform: scale(1.03);
-        }
+	#onOff {
+		cursor: pointer;
+		transition: all 0.07s ease-in;
 
-        &:active {
-            transform: scale(.98);
-        }
+		&:hover {
+			transform: scale(1.03);
+		}
 
-        &.disabled {
-            filter: grayscale(1);
-        }
+		&:active {
+			transform: scale(0.98);
+		}
 
-        img {
-            width: 100%;
-            display: block;
-        }
-    }
+		&.disabled {
+			filter: grayscale(1);
+		}
 
-    #signature {
-        margin-top: 3em;
-        font-size: .8em;
-        line-height: 1.5em;
-        color: #111;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
 
-        a {
-            color: #111;
-        }
+	#signature {
+		margin-top: 3em;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		color: #111;
 
-        @media (prefers-color-scheme: dark) {
-            background: #111111;
-            color: #D1D1D1; 
+		a {
+			color: #111;
+		}
 
-            a {
-                color: #D1D1D1;
-            }
-        }
-    }
+		@media (prefers-color-scheme: dark) {
+			background: #111111;
+			color: #d1d1d1;
+
+			a {
+				color: #d1d1d1;
+			}
+		}
+	}
 }
 
 body.unminus {
-    .vZKGD, .unsplashPlus {
-        display: none;
-    }
+	figure[itemprop="image"]:has(a[href^="/plus"]) {
+		display: none;
+	}
 
-    // separated value because otherwise it breaks Firefox
-    figure[itemprop="image"]:has(a[href^="/plus"]) { // 
-        display: none;
-    }
+	// nav item
+	.BpoxV:has(a[href="/plus"]) {
+		display: none;
+	}
 
-    // nav item 
-    .BpoxV:has(a[href='/plus']) {
-        display: none;
-    }
+	a[href="/plus"],
+	a[href="/plus/new"] {
+		display: none;
+	}
 
-    .hidden {
-        display: none;
-    }
+	.hidden {
+		display: none;
+	}
 }

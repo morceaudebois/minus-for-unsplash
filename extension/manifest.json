@@ -1,32 +1,30 @@
 {
-  "manifest_version": 3,
-  "name": "Minus for Unsplash · Remove Unsplash+",
-  "short_name": "Minus for Unsplash",
-  "version": "1.4",
-  "description": "Minus for Unsplash is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
-  "author": "Tahoe Beetschen",
+	"manifest_version": 3,
+	"name": "Minus for Unsplash · Remove Unsplash+",
+	"short_name": "Minus for Unsplash",
+	"version": "1.5",
+	"description": "Minus for Unsplash is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
+	"author": "Tahoe Beetschen",
 
-  "content_scripts": [
-    {
-      "matches": ["https://unsplash.com/*"],
-      "js": ["content.js"],
-      "css": ["style.css"]
-    }
-  ],
+	"content_scripts": [
+		{
+			"matches": ["https://unsplash.com/*"],
+			"js": ["content.js"],
+			"css": ["style.css"]
+		}
+	],
 
-  "default_locale": "en",
+	"default_locale": "en",
 
-  "icons": {
-   "512": "icon.png"
-  },
+	"icons": {
+		"512": "icon.png"
+	},
 
-  "permissions": [
-    "storage"
-  ],
+	"permissions": ["storage"],
 
-  "action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html",
-    "title": "Minus for Unsplash"
-  }
+	"action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html",
+		"title": "Minus for Unsplash"
+	}
 }
