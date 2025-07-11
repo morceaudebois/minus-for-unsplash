@@ -42,11 +42,12 @@ function handleElementsInView(selector, callback) {
 }
 
 function removeCollections() {
-	handleElementsInView('div[data-test="collection-feed-card"]', (element) => {
-		if (element.querySelector(".WZO3o").innerHTML.includes("Unsplash+")) {
+	handleElementsInView(
+		'figure:has(img[src^="https://plus.unsplash.com"])',
+		(element) => {
 			element.classList.add("hidden")
 		}
-	})
+	)
 }
 
 // looks for collections on scroll & load
