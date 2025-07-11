@@ -28,7 +28,7 @@
 	"name": "Minus for Unsplash · Remove Unsplash+",
 	"permissions": ["storage"],
 	"short_name": "Minus for Unsplash",
-	"version": "1.5",
+	"version": "1.6",
 	"browser_specific_settings": {
 		"gecko": {
 			"id": "{81ccc223-67a9-4b53-9345-b85b5c6c8748}",
