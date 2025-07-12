@@ -21,20 +21,6 @@ chrome.storage.onChanged.addListener(function (changes) {
 	setState(changes.isOn.newValue)
 })
 
-function debounce(func, delay) {
-	let timeoutId
-
-	return function () {
-		const context = this
-		const args = arguments
-		clearTimeout(timeoutId)
-
-		timeoutId = setTimeout(() => {
-			func.apply(context, args)
-		}, delay)
-	}
-}
-
 function handleElementsInView(selector, callback) {
 	document.querySelectorAll(selector).forEach((element) => {
 		callback(element)
@@ -50,7 +36,8 @@ function removeCollections() {
 	)
 }
 
-// looks for collections on scroll & load
-window.addEventListener("scroll", debounce(removeCollections, 50))
-
+// looks for collections on load
 setTimeout(removeCollections, 200)
+
+// Autoremove every 100ms to handle dynamic modals
+setInterval(removeCollections, 100)
