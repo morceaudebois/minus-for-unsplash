@@ -1,4 +1,4 @@
-// Si premier lancement, ajoute isOn
+// If first launch, add isOn
 chrome.storage.local.get(["isOn"], function (result) {
 	if (result.isOn === undefined)
 		chrome.storage.local.set({
@@ -11,12 +11,12 @@ function setState(state) {
 	else document.body.classList.remove("unminus")
 }
 
-// ajout .unminus au body si activé
+// add .unminus to body if enabled
 chrome.storage.local.get(["isOn"], function (result) {
 	setState(result.isOn)
 })
 
-// ajout .unminus au body à chaque changement de .isOn
+// add .unminus to body on every change of .isOn
 chrome.storage.onChanged.addListener(function (changes) {
 	setState(changes.isOn.newValue)
 })
