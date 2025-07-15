@@ -1,6 +1,6 @@
 {
 	"name": "minus-for-unsplash",
-	"version": "1.5",
+	"version": "1.6",
 	"description": "Minus for Unsplash is a simple addon that lets you hide the Unsplash+ content from Unsplash.",
 	"main": "index.js",
 	"scripts": {

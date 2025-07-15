@@ -1,4 +1,4 @@
-// Si premier lancement, ajoute isOn
+// If first launch, add isOn
 chrome.storage.local.get(["isOn"], function (result) {
 	if (result.isOn === undefined)
 		chrome.storage.local.set({
@@ -11,29 +11,15 @@ function setState(state) {
 	else document.body.classList.remove("unminus")
 }
 
-// ajout .unminus au body si activé
+// add .unminus to body if enabled
 chrome.storage.local.get(["isOn"], function (result) {
 	setState(result.isOn)
 })
 
-// ajout .unminus au body à chaque changement de .isOn
+// add .unminus to body on every change of .isOn
 chrome.storage.onChanged.addListener(function (changes) {
 	setState(changes.isOn.newValue)
 })
-
-function debounce(func, delay) {
-	let timeoutId
-
-	return function () {
-		const context = this
-		const args = arguments
-		clearTimeout(timeoutId)
-
-		timeoutId = setTimeout(() => {
-			func.apply(context, args)
-		}, delay)
-	}
-}
 
 function handleElementsInView(selector, callback) {
 	document.querySelectorAll(selector).forEach((element) => {
@@ -42,14 +28,16 @@ function handleElementsInView(selector, callback) {
 }
 
 function removeCollections() {
-	handleElementsInView('div[data-test="collection-feed-card"]', (element) => {
-		if (element.querySelector(".WZO3o").innerHTML.includes("Unsplash+")) {
+	handleElementsInView(
+		'figure:has(img[src^="https://plus.unsplash.com"])',
+		(element) => {
 			element.classList.add("hidden")
 		}
-	})
+	)
 }
 
-// looks for collections on scroll & load
-window.addEventListener("scroll", debounce(removeCollections, 50))
-
+// looks for collections on load
 setTimeout(removeCollections, 200)
+
+// Autoremove every 100ms to handle dynamic modals
+setInterval(removeCollections, 100)
